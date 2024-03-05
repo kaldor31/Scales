@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scales</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: white;
+        }
+
+        .scales-label {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+        .scale-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .scale-list li {
+            font-size: 18px;
+            margin-bottom: 5px;
+            padding: 5px;
+            letter-spacing: 5px; 
+        }
+
+        .scale-list li.black {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: rgb(128, 128, 128);
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .button:hover{
+            background-color: rgb(255, 255, 255);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .scales-label {
+                font-size: 16px;
+            }
+
+            .scale-list li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="scales-label">До мажор:</div>
+        <ul class="scale-list">
+            <li>До -</li>
+            <li>Ре -</li>
+            <li>Ми -</li>
+            <li>Фа -</li>
+            <li>Соль -</li>
+            <li>Ля -</li>
+            <li>Си -</li>
+            <li>До</li>
+        </ul>
+        <div class="scales-label">До минор:</div>
+        <ul class="scale-list">
+            <li>До -</li>
+            <li>Ре -</li>
+            <li class="black">Ми бемоль</li>
+            <li> - </li>
+            <li>Фа -</li>
+            <li>Соль -</li>
+            <li class="black">Ля бемоль</li>
+            <li> - </li>
+            <li class="black">Си бемоль</li>
+            <li> - </li>
+            <li>До</li>
+        </ul>
+        <div class="scales-label">Ре мажор:</div>
+        <ul class="scale-list">
+            <li>Ре -</li>
+            <li>Ми -</li>
+            <li class="black">Фа диез</li>
+            <li> - </li>
+            <li>Соль -</li>
+            <li>Ля -</li>
+            <li>Си -</li>
+            <li class="black">До диез</li>
+            <li> - </li>
+            <li>Ре</li>
+        </ul>
+        <div class="scales-label">Ре минор:</div>
+        <ul class="scale-list">
+            <li>Ре -</li>
+            <li>Ми -</li>
+            <li class="black">Фа</li>
+            <li> - </li>
+            <li>Соль -</li>
+            <li>Ля -</li>
+            <li class="black">Си бемоль</li>
+            <li> - </li>
+            <li>До -</li>
+            <li>Ре</li>
+        </ul>
+        <div class="scales-label">Соль мажор:</div>
+        <ul class="scale-list">
+            <li>Соль -</li>
+            <li>Ля -</li>
+            <li>Си -</li>
+            <li>До -</li>
+            <li>Ре -</li>
+            <li>Ми -</li>
+            <li class="black">Фа диез</li>
+            <li> - </li>
+            <li>Соль</li>
+        </ul>
+        <div class="scales-label">Соль минор:</div>
+        <ul class="scale-list">
+            <li>Соль -</li>
+            <li>Ля -</li>
+            <li class="black">Си бемоль</li>
+            <li> - </li>
+            <li>До -</li>
+            <li>Ре -</li>
+            <li class="black">Ми бемоль</li>
+            <li> - </li>
+            <li>Фа -</li>
+            <li>Соль</li>
+        </ul>
+        <div class="scales-label">Си мажор:</div>
+        <ul class="scale-list">
+            <li>Си -</li>
+            <li class="black">До диез</li>
+            <li> - </li>
+            <li class="black">Ре диез</li>
+            <li> - </li>
+            <li>Ми -</li>
+            <li class="black">Фа диез</li>
+            <li> - </li>
+            <li class="black">Соль диез</li>
+            <li> - </li>
+            <li class="black">Ля диез</li>
+            <li> - </li>
+            <li>Си</li>
+        </ul>
+        <div class="scales-label">Си минор:</div>
+        <ul class="scale-list">
+            <li>Си -</li>
+            <li class="black">До диез</li>
+            <li> - </li>
+            <li>Ре -</li>
+            <li>Ми -</li>
+            <li class="black">Фа</li>
+            <li> - </li>
+            <li>Соль -</li>
+            <li>Ля -</li>
+            <li>Си</li>
+        </ul>
+
+    <div class="buttons">
+        <a href="scalesEng.html"><button class="button">Английский</button></a>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
